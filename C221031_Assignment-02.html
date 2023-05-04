@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment-2 ID-C221031</title>
+</head>
+<body>
+<center>
+<h2><u style="border:2px solid Tomato;">Multiple Choice Questions</u></h2>
+<form> 
+<p><b>Enter your country-</b></p>
+<select>
+<option value="BANGLADESH">BANGLADESH</option>
+<option value="INDIA">INDIA</option>
+<option value="NEPAL">NEPAL</option>
+<option value="PAKISTAN">PAKISTAN</option>
+</select> 
+<br> 
+<p><b>Q-1. Which team won the FIFA World Cup 2022 :</b></p><br>
+<input type="radio" name="1" value="ARGENTINA">ARGENTINA<br>
+<input type="radio" name="1" value="FRANCE">FRANCE<br>
+<input type="radio" name="1" value="BRAZIL">BRAZIL<br>
+<input type="radio" name="1" value="SPAIN">SPAIN<br>
+<br>
+<p><b>Q-2. Which team has the most FIFA World Cup Trophies :</b></p><br>
+<input type="radio" name="2" value="ARGENTINA">ARGENTINA<br>
+<input type="radio" name="2" value="GERMANY">GERMANY<br>
+<input type="radio" name="2" value="BRAZIL">BRAZIL<br>
+<input type="radio" name="2" value="SPAIN">SPAIN<br>
+<br>
+<p><b>Q-3. Free mixing is :</b></p><br>
+<input type="radio" name="3" value="HARAM">HARAM<br>
+<input type="radio" name="3" value="HALAL">HALAL<br>
+<input type="radio" name="3" value="MAKRUH">MAKRUH<br>
+<input type="radio" name="3" value="WAJIB">WAJIB<br>
+<br>
+<p><b>Q-4. Which one is a computer processor :</b></p><br>
+<input type="checkbox" name="4" value="RYZEN">RYZEN<br>
+<input type="checkbox" name="4" value="MIDEATEK">MIDEATEK<br>
+<input type="checkbox" name="4" value="SNAPDRAGON">SNAPDRAGON<br>
+<input type="checkbox" name="4" value="EXYNOS">EXYNOS<br>
+<br>
+<p><b>Q-5. Which car is made in Bangladesh :</b></p><br>
+<input type="checkbox" name="5" value="HONDA">HONDA<br>
+<input type="checkbox" name="5" value="HYUNDAI">HYUNDAI<br>
+<input type="checkbox" name="5" value="TOYOTA">TOYOTA<br>
+<input type="checkbox" name="5" value="TATA">TATA<br>
+
+<br>
+<br>
+<br>
+<input type="submit" value="SUBMIT" style="background-color:LightGray;" onClick="result()">
+</form> 
+<p id="feedback"></p>
+<script>
+function result()
+{     var correct = 0;
+      var incorrect = 0;
+      if (document.querySelector("input[name='1']:checked").value === "ARGENTINA") {
+        correct++;
+      } else {
+        incorrect++;
+      }
+      if (document.querySelector("input[name='2']:checked").value === "BRAZIL") {
+        correct++;
+      } else {
+        incorrect++;
+      }
+      if (document.querySelector("input[name='3']:checked").value === "HARAM") {
+        correct++;
+      } else {
+        incorrect++;
+      }
+      if (document.querySelector("input[name='4']:checked").value === "RYZEN") {
+        correct++;
+      } else {
+        incorrect++;
+      }
+      if (document.querySelector("input[name='5']:checked").value === "HYUNDAI") {
+        correct++;
+      } else {
+        incorrect++;
+      }
+      alert("You got " + correct + " correct answers and " + incorrect + " incorrect answers.");	
+}
+</script>
+
+</center>
+</body>
+</html
